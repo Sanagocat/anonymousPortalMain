@@ -1,0 +1,80 @@
+/* 전체 배경색 */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a8e5ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 30px;
+  color: #333;
+}
+
+/* 버튼과 텍스트 그룹 */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.button-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 버튼 스타일 */
+.portal-button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 20px;
+  background-size: contain; /* 이미지가 버튼 안에 fit */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.portal-button:hover {
+  transform: scale(1.1);
+}
+
+/* 버튼 아래 라벨 */
+.button-label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 각 버튼별 배경 이미지 */
+#chat {
+  background-image: url('buttonImage/chat.png');
+}
+
+#blog {
+  background-image: url('buttonImage/blog.png');
+}
+
+#photos {
+  background-image: url('buttonImage/photos.png');
+}
+
+#icloud {
+  background-image: url('buttonImage/icloud.png');
+}
+
+#mail {
+  background-image: url('buttonImage/mail.png');
+}
+
+#calendar {
+  background-image: url('buttonImage/calendar.png');
+}
