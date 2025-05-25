@@ -38,7 +38,8 @@ async function loginFunction() {
     //alert("LOGIN SUCESS!!");
     //save jwt token
     console.log(data.token);
-    localStorage.setItem("myblogtoken", data.token);
+   //localStorage.setItem("myblogtoken", data.token);
+    setCookie("myblogtoken", data.token,".anonymousportal.com");
     
     window.location.href = "https://anonymousportal.com";
   }
