@@ -13,7 +13,7 @@ logoutButton.addEventListener("click", logoutFunction);
 
 function logoutFunction(){
   //localStorage.removeItem("myblogtoken");
-removeCookie("myblogtoken");
+removeCookie("myblogtoken",".anonymousportal.com");
   alert("LOG OUT!!");
 }
 
