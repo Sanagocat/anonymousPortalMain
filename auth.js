@@ -4,7 +4,7 @@ const verifyURL = "https://anonymous-portal-back-end-8f41d2684ed2.herokuapp.com"
 async function checkAuthAndRedirect() {
     //1. load token
     //const token = localStorage.getItem("myblogtoken");
-    getCookie("myblogtoken");
+    const token = getCookie("myblogtoken");
     console.log(token);
     if (token == "") {
         console.log("NULL!!");
