@@ -96,3 +96,12 @@ async function registerFunction() {
     alert("User register success!");
   }
 }
+
+// 쿠키 설정 함수
+function setCookie(key, value, mainURL) { //mainURL = ".naver.com" 의 mainDomain (. 포함)
+  document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}; domain=${mainURL}; path=/`;
+}
+// 쿠키 삭제 함수 (과거로 돌림)
+function removeCookie(key, mainURL) {
+  document.cookie = `${encodeURIComponent(key)}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=${mainURL};`;
+}
