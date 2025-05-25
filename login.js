@@ -12,7 +12,8 @@ registerButton.addEventListener("click", registerFunction);
 logoutButton.addEventListener("click", logoutFunction);
 
 function logoutFunction(){
-  localStorage.removeItem("myblogtoken");
+  //localStorage.removeItem("myblogtoken");
+removeCookie("myblogtoken");
   alert("LOG OUT!!");
 }
 
